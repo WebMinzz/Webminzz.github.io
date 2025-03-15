@@ -145,6 +145,41 @@ footer a:hover {
   color: cyan;
 }
 
+#about {
+  background: linear-gradient(135deg, #333, #121212);
+  color: #e0e0e0;
+  padding: 2rem 0;
+  text-align: center;
+  overflow: hidden;
+}
+#about h2 {
+  animation: slideIn 2s ease-in-out;
+}
+#about h1 {
+  text-align: left;
+  animation: slideRight 2s ease-in-out;
+}
+#about img {
+  transition: transform 1s ease, box-shadow 0.3s ease;
+  filter: drop-shadow(2px 2px 15px #000000);
+  animation: float 1.5s infinite;
+}
+#about img:hover {
+  filter: drop-shadow(2px 2px 15px cyan);
+  transition: 1s ease;
+  cursor: none;
+}
+#about p {
+  text-align: left;
+  animation: fadeIn 2s ease-out;
+}
+#about .subjudul{
+  color: #e0e0e0;
+  text-align: center;
+  text-transform: uppercase;
+  animation: slideIn 2s ease-out;
+}
+
 #contact h1 {
   animation: slideIn 2s ease-in-out;
   font-style: oblique;
@@ -216,6 +251,23 @@ footer a:hover {
   }
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(50%);
+    font-style: oblique;
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-10%);
+    font-style: oblique;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }
