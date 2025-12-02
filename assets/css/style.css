@@ -159,6 +159,15 @@ footer a:hover {
   text-align: left;
   animation: pulse 2s ease-in-out;
 }
+#about a.itshere {
+  color: blueviolet;
+
+}
+#about a.itshere:hover {
+  color: cyan;
+  animation: slideIn 0.5s ease-in;
+
+}
 #about img {
   transition: transform 1s ease, box-shadow 0.3s ease;
   filter: drop-shadow(2px 2px 15px #000000);
@@ -207,6 +216,14 @@ footer a:hover {
   display: none;
 }
 /* Keyframe Animations */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
